@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% body block %}
+
+    <form action="/words" method="post">
+        <input autocomplete="off" autofocus type="text" name="words" placeholder="Type words here" required>
+        <button type="submit">Submit</button>
+    </form>
+
+{% endblock %}
